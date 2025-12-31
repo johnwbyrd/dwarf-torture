@@ -93,8 +93,8 @@ int main(void) {
         .stroke = {10, 20, 30, 128}
     };
 
-    int r1 = process_rectangle(&local_rect);
-    int r2 = process_complex(&global_object);
+    uint32_t r1 = process_rectangle(&local_rect);
+    uint64_t r2 = process_complex(&global_object);
 
     printf("Results: %d, %d\n", r1, r2);
     return 0;

@@ -11,6 +11,12 @@ target_compile_options(float_qsort_O1 PRIVATE -O1)
 add_dwarf_test(float_qsort_O2 float_qsort.c)
 target_compile_options(float_qsort_O2 PRIVATE -O2)
 
+add_dwarf_test(float_qsort_Os float_qsort.c)
+target_compile_options(float_qsort_Os PRIVATE -Os)
+
+add_dwarf_test(float_qsort_Oz float_qsort.c)
+target_compile_options(float_qsort_Oz PRIVATE -Oz)
+
 # hello_world - simple sanity check
 add_dwarf_test(hello_world hello_world.c)
 target_compile_options(hello_world PRIVATE -O0)
