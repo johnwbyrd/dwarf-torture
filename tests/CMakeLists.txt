@@ -32,3 +32,7 @@ target_compile_options(nested_structs_O0 PRIVATE -O0)
 # deep_recursion - stress unwinder with 15+ frame depth
 add_dwarf_test(deep_recursion_O0 deep_recursion.c)
 target_compile_options(deep_recursion_O0 PRIVATE -O0)
+
+# timer_irq - test ZBC timer interrupt functionality
+add_dwarf_test(timer_irq timer_irq.c)
+target_compile_options(timer_irq PRIVATE -O0)
