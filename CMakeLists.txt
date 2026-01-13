@@ -32,7 +32,7 @@ set(COMMON_FLAGS "-nostdlib -isystem ${PICOLIBC_INCLUDE} -g -D__IEEE_LITTLE_ENDI
 set(COMMON_LINK_FLAGS
     "-nostdlib"
     "-L${PICOLIBC_LIB}"
-    "-T${PICOLIBC_LIB}/picolibc.ld"
+    "-T${PICOLIBC_LIB}/picolibc_noflash.ld"
     "${PICOLIBC_LIB}/crt0-semihost-zbc.o"
     "-lc"
     "-lm"
